@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록스타일</title>
+</head>
+<body>
+    <h2>목록에 표시되는 기호, 숫자를 변경</h2>
+    <p>
+        list-style-type 속성이용<br>
+        ul : disc, circle, square, none <br>
+        ol : decimal, decimal-leading-zero, lower-roman, upper-roman, lower-alpha, upper-alpha
+    </p>
+    <style>
+        .disc{
+            list-style-type: decimal-leading-zero;
+            /* decimal은 숫자로 출력, decimal-leading-zero 숫자에 0 붙임 ex. 01, 02 ... */
+        }
+        .none{
+            list-style-type: none;
+        }
+        .listimage{
+            list-style-image: url("./images/쿼카.jpg");
+        }
+    </style>
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>jquery</li>
+    </ul>
+    <ul class="disc">
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>jquery</li>
+    </ul>
+    <ul class="none">
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>jquery</li>
+    </ul>
+    <ul class="listimage">
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>jquery</li>
+    </ul>
+
+
+</body>
+</html>
